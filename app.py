@@ -40,7 +40,7 @@ def check_host():
     #         }), 400
     try:
         # Prepare the command to execute the script with the HTTP flag
-        cmd = ['python3', SCRIPT_PATH, '--http', '-t', target]
+        cmd = ['python', SCRIPT_PATH, '--http', '-t', target]
 
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
